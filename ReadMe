@@ -1,0 +1,33 @@
+# Interactive Shopping List Application
+
+A dynamic, web-based interactive shopping list built using HTML, CSS, and modern JavaScript. This project allows users to add items with custom prices, toggle their purchased status, calculate total costs automatically, and manage list items dynamically.
+
+---
+
+## Features
+
+- **Add Items**: Enter an item name and price to add a new card to your shopping list.
+- **Input Validation**: Automatically trims whitespace and prevents empty or invalid entries.
+- **Mark as Purchased**: Toggle items between purchased and unpurchased states with a single click.
+- **Visual Feedback**: Applies custom styling (strikethrough text and background highlights) to visually mark completed items.
+- **Total Price Calculation**: Automatically sums up and updates the total price of purchased items in real-time.
+- **Clear List**: Clear all items from the list at once to start fresh.
+
+---
+
+## Technologies Used
+
+- **HTML5**: Structural layout and semantic elements.
+- **CSS3**: Custom styling utilizing CSS variables (`:root`) for color palette and dark surface design.
+- **JavaScript (ES6+)**: Array manipulation, event handling, dynamic DOM creation, and state management.
+
+---
+
+## Project Structure
+
+```text
+├── index.html   # Main HTML markup and structure
+├── style.css    # Styling rules and CSS variable definitions
+├── script.js    # Application logic and DOM manipulation
+└── README.md    # Project documentation
+```

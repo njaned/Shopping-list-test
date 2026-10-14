@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>SHOPPING LIST</h1>
+
+    <!-- Inputs for adding items -->
+    <div id="add-item">
+      <input type="text" id="item-name" placeholder="Item name" />
+      <input type="number" id="item-price" placeholder="Item price" />
+      <button id="add-item-button">Add</button>
+    </div>
+
+    <!-- List of items -->
+    <ul id="shopping-list"></ul>
+
+    <!-- Buttons for actions -->
+    <div id="list-actions">
+      <button id="clear-list-button">Clear list</button>
+      <p>total price: <span id="total-price">0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

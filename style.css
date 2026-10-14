@@ -1,21 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
 
 :root {
-  /* Core Brand Colors */
   --color-primary: #D4AF37;      
   --color-secondary: #121212;     
   --color-tertiary: #1E1E1E;      
-
-  /* Supporting Accent & Functional Colors */
   --color-accent: #FFD700;        
   --color-surface-hover: #2A2A2A;  
-  
-  /* Text & Contrast */
   --color-text-main: #F5F5F5;     
   --color-text-muted: #A0A0A0;    
   --color-text-inverse: #000000;  
-
-  /* Shopping List Statuses */
   --color-completed: #2A3A2A;     
   --color-completed-text: #81C784;
   --color-border: #2C2C2C;         
@@ -76,41 +69,39 @@ h1 {
     justify-content: center;
     margin-top: 50px;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 10px;
+    padding: 0;
+    list-style: none;
 }
 
 #shopping-list li {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
     border: 1px solid var(--color-border);
     margin-bottom: 10px;
-    flex-wrap: wrap;
-    background-color: var(--color-text-main);
-    color: var(--color-text-inverse);
+    background-color: var(--color-tertiary);
+    min-width: 250px;
 }
 
-#shopping-list li:last-child {
-    margin-bottom: 0;
-}
-
-#shopping-list li span {
-    font-size: 1.2rem;
-    font-weight: 100;
+/* Purchased styling */
+#shopping-list li.purchased {
+    background-color: var(--color-completed);
+    color: var(--color-completed-text);
+    text-decoration: line-through;
 }
 
 #shopping-list li button {
-    padding: 5px;
+    padding: 5px 10px;
+    margin-left: 5px;
     border: none;
     border-radius: 5px;
-    font-size: 1.2rem;
-    font-weight: 100;
+    font-size: 1rem;
     background-color: var(--color-secondary);
     color: var(--color-text-main);
+    cursor: pointer;
 }
 
 #list-actions {
@@ -118,7 +109,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 #list-actions button {
@@ -127,26 +118,11 @@ h1 {
     border: none;
     border-radius: 5px;
     font-size: 1.2rem;
-    font-weight: 100;
     background-color: var(--color-secondary);
     color: var(--color-text-main);
+    cursor: pointer;
 }
 
 #list-actions p {
     font-size: 1.2rem;
-    font-weight: 100;
-    color: var(--color-text-main);
-    margin-top: 10px;
-    border: var(--color-text-inverse) 1px solid;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: var(--color-secondary);
-}
-
-.purchased {
-    background-color: var(--color-completed);
-    color: var(--color-completed-text);
-    border: var(--color-text-inverse) 1px solid;
-    border-radius: 5px;
-    padding: 5px;
 }
